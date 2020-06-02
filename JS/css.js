@@ -1,4 +1,4 @@
-* {
+const string = `* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,33 +13,27 @@
 }
 
 .face {
-    height: 100vh;
+    height: 55vh;
     background: #fddb21;
     position: relative;
-    /* overflow: hidden; */
+     overflow: hidden;
 }
 
 .eye {
     position: absolute;
-    left: 50%;
     top: 100px;
     border: 5px solid black;
     background: #ffffff;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    /*animation: blink forwards infinite 6s ease-in-out;*/
+    animation: blink forwards infinite 6s ease-in-out;
 }
 .eye.left {
-    transform: translateX(-100%);
+    right: 50%;
 }
-@keyframes blink{
-    0%, 2%, 60%, 62%, 100% {
-        transform: scale(1,1);
-    }
-    1%, 61% {
-        transform: scale(1.5,0.1);
-    }
+.eye.right{
+    left: 50%;
 }
 
 .eye::before {
@@ -271,3 +265,12 @@
     position: absolute;
     transform: translateX(-15px)
 }
+@keyframes blink{
+    0%, 2%, 60%, 62%, 100% {
+        transform: scale(1,1);
+    }
+    1%, 61% {
+        transform: scale(1.5,0.1);
+    }
+}`
+export default string

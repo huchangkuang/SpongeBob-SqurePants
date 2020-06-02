@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+#text{
+    position: fixed;
+    height: 45vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*#text::-webkit-scrollbar{*/
+/*    display: none;*/
+/*}*/
+#skin{
+    position: fixed;
+    height: 45vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#style{
+    display: none;
+}
