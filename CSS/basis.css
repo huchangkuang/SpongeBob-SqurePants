@@ -12,18 +12,19 @@
     box-sizing: border-box;
 }
 #text{
-    position: fixed;
+    /* position: fixed; */
     height: 45vh;
     top: 0;
     left: 0;
     width: 100%;
+    overflow-y:scroll ;
 }
-/*#text::-webkit-scrollbar{*/
-/*    display: none;*/
-/*}*/
+#text::-webkit-scrollbar{
+   display: none;
+}
 #skin{
-    position: fixed;
-    height: 45vh;
+    /* position: fixed; */
+    height: 55vh;
     bottom: 0;
     left: 0;
     width: 100%;
